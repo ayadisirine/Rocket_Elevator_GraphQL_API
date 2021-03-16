@@ -14,12 +14,44 @@ module Types
     #   "Hello World!"
     # end
 
-    # testing
-    field :build, [BuildingType], null: false,
-      description: "Testing queries"
-    def build
+    # Query connection
+    field :building, [BuildingType], null: false,
+      description: "Building queries"
+    def building
       Building.all
     end
+
+    field :address, [AddressType], null: false,
+      description: "Address queries"
+    def address
+      Address.all
+    end
+
+    field :battery, [BatteryType], null: false,
+      description: "Battery queries"
+    def battery
+      Battery.all
+    end
+
+    field :buildingDetail, [BuildingDetailType], null: false,
+      description: "Building Detail queries"
+    def buildingDetail
+      BuildingDetail.all
+    end
+
+    field :column, [ColumnType], null: false,
+      description: "Column queries"
+    def column
+      Column.all
+    end
+
+    field :customer, [CustomerType], null: false,
+      description: "Customer queries"
+    def customer
+      Customer.all
+    end
+
+    
 
   end
 end
