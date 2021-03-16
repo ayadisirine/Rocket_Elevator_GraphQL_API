@@ -29,13 +29,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # gem 'rack-cors'
 
 gem 'graphql'
-<<<<<<< HEAD
-gem 'mysql2'
-=======
 gem 'mysql2', '>= 0.4.4', '< 0.6.0'
 gem 'pg'
 gem 'multiverse'
->>>>>>> main
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
