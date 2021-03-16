@@ -63,11 +63,11 @@ module Types
       Employee.all
     end
 
-    field :lead, [LeadType], null: false,
-      description: "Lead queries"
-    def lead
-      Lead.all
-    end
+    # field :lead, [LeadType], null: false,
+    #   description: "Lead queries"
+    # def lead
+    #   Lead.all
+    # end
 
     field :quote, [QuoteType], null: false,
       description: "Quote queries"
@@ -81,5 +81,12 @@ module Types
       User.all
     end
 
+    field :factIntervention, [FactInterventionType], null: false,
+      description: "FactIntervention queries"
+    def factIntervention
+      FactIntervention.all
+    end
+
+    
   end
 end
