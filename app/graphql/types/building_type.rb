@@ -15,7 +15,7 @@ module Types
     field :battery_count, Integer, null: true
 
     def battery_count
-      object.battery.count
+      object.batteries.count
     end
   end
 end
