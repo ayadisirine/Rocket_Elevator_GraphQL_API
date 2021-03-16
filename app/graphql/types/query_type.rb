@@ -51,7 +51,7 @@ module Types
       Customer.all
     end
 
-    
+
 
   end
 end
