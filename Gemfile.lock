@@ -75,10 +75,23 @@ GEM
     mini_mime (1.0.2)
     minitest (5.14.4)
     msgpack (1.4.2)
+<<<<<<< HEAD
+=======
+    multiverse (0.2.2)
+      activerecord (>= 4.2)
+      activesupport (>= 4.2)
+      railties (>= 4.2)
+>>>>>>> main
     mysql2 (0.5.3)
     nio4r (2.5.7)
     nokogiri (1.11.2-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.11.2-x86_64-linux)
+      racc (~> 1.4)
+<<<<<<< HEAD
+=======
+    pg (1.2.3)
+>>>>>>> Dave
     puma (3.12.6)
     racc (1.5.2)
     rack (2.2.3)
@@ -124,7 +137,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
     thor (1.1.0)
     thread_safe (0.3.6)
     tzinfo (1.2.9)
@@ -135,6 +147,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap (>= 1.1.0)
@@ -142,12 +155,17 @@ DEPENDENCIES
   graphiql-rails
   graphql
   listen (>= 3.0.5, < 3.2)
+<<<<<<< HEAD
   mysql2
+=======
+  multiverse
+  mysql2 (>= 0.4.4, < 0.6.0)
+  pg
+>>>>>>> main
   puma (~> 3.11)
   rails (~> 5.2.4, >= 5.2.4.5)
   spring
   spring-watcher-listen (~> 2.0.0)
-  sqlite3
   tzinfo-data
 
 RUBY VERSION
