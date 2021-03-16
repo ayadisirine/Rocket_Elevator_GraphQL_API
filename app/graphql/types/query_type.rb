@@ -51,7 +51,35 @@ module Types
       Customer.all
     end
 
+    field :elevator, [ElevatorType], null: false,
+      description: "Elevator queries"
+    def elevator
+      Elevator.all
+    end
 
+    field :employee, [EmployeeType], null: false,
+      description: "Employee queries"
+    def employee
+      Employee.all
+    end
+
+    field :lead, [LeadType], null: false,
+      description: "Lead queries"
+    def lead
+      Lead.all
+    end
+
+    field :quote, [QuoteType], null: false,
+      description: "Quote queries"
+    def quote
+      Quote.all
+    end
+
+    field :user, [UserType], null: false,
+     description: "User queries"
+    def user
+      User.all
+    end
 
   end
 end
