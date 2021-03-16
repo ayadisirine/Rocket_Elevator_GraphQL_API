@@ -10,6 +10,5 @@ module Types
     field :notes, String, null: true
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
-    field :battery_type, String, null: true
   end
 end
