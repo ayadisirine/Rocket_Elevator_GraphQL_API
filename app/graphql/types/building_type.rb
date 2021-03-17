@@ -11,6 +11,9 @@ module Types
     field :customer_id, Integer, null: true
     field :batteries, [BatteryType], null: true
     field :factInterventions, [FactInterventionType], null: true
+    field :details, BuildingDetailType, null: true
+
+
 
     field :battery_count, Integer, null: true
     field :fact_count, Integer, null: true
@@ -22,5 +25,10 @@ module Types
     def battery_count
       object.batteries.count
     end
+
+    def details
+      BuildingDetail.find(object.id)
+    end
+
   end
 end
