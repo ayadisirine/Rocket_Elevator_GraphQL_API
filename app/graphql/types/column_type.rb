@@ -9,5 +9,6 @@ module Types
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
     field :column_type, String, null: true
+    field :elevators, [ElevatorType], null: true
   end
 end

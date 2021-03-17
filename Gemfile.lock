@@ -75,23 +75,17 @@ GEM
     mini_mime (1.0.2)
     minitest (5.14.4)
     msgpack (1.4.2)
-<<<<<<< HEAD
-=======
     multiverse (0.2.2)
       activerecord (>= 4.2)
       activesupport (>= 4.2)
       railties (>= 4.2)
->>>>>>> main
     mysql2 (0.5.3)
     nio4r (2.5.7)
     nokogiri (1.11.2-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.11.2-x86_64-linux)
       racc (~> 1.4)
-<<<<<<< HEAD
-=======
     pg (1.2.3)
->>>>>>> Dave
     puma (3.12.6)
     racc (1.5.2)
     rack (2.2.3)
@@ -155,13 +149,9 @@ DEPENDENCIES
   graphiql-rails
   graphql
   listen (>= 3.0.5, < 3.2)
-<<<<<<< HEAD
-  mysql2
-=======
   multiverse
   mysql2 (>= 0.4.4, < 0.6.0)
   pg
->>>>>>> main
   puma (~> 3.11)
   rails (~> 5.2.4, >= 5.2.4.5)
   spring
