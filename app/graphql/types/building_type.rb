@@ -12,6 +12,7 @@ module Types
     field :batteries, [BatteryType], null: true
     field :factInterventions, [FactInterventionType], null: true
     field :details, BuildingDetailType, null: true
+    
 
 
 
@@ -28,6 +29,16 @@ module Types
 
     def details
       BuildingDetail.find(object.id)
+    end
+
+    field :interventions, [FactInterventionType], null: true
+    def interventions
+      object.factInterventions.all
+    end
+
+    field :customer, CustomerType, null: true
+    def customer
+      Customer.find(object.customer_id)
     end
 
   end
