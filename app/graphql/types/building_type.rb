@@ -10,9 +10,14 @@ module Types
     field :technical_contact_building_phone, String, null: true
     field :customer_id, Integer, null: true
     field :batteries, [BatteryType], null: true
-
+    field :factInterventions, [FactInterventionType], null: true
 
     field :battery_count, Integer, null: true
+    field :fact_count, Integer, null: true
+
+    def fact_count
+      object.factInterventions.count
+    end
 
     def battery_count
       object.batteries.count

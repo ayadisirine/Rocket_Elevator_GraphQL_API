@@ -2,11 +2,11 @@ development:
   database: rocketelevators_development
   adapter: mysql2
   port: 3306
-  username: root
-  password: 
+  username: grimm
+  password: jaggerx9
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   encoding: utf8
-  # socket: /var/run/mysqld/mysqld.sock
+  socket: /var/run/mysqld/mysqld.sock
 
 dwh_development:
   database: rocketelevators_dwh
@@ -15,5 +15,5 @@ dwh_development:
   host: localhost
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   encoding: utf8
-  username: yoannsmacbookpro
+  username: postgres
   password: postgres
