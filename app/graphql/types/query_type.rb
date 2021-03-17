@@ -69,12 +69,6 @@ module Types
       Employee.find(id)
     end
 
-    # field :lead, [LeadType], null: false,
-    #   description: "Lead queries"
-    # def lead
-    #   Lead.all
-    # end
-
     field :quote, [QuoteType], null: false,
       description: "Quote queries"
     def quote
