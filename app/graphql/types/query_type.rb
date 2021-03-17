@@ -56,10 +56,17 @@ module Types
       Elevator.all
     end
 
-    field :employee, [EmployeeType], null: false,
+    field :employees, [EmployeeType], null: false,
       description: "Employee queries"
-    def employee
+    def employees
       Employee.all
+    end
+
+    field :employee, EmployeeType, null: false do
+      argument :id, ID, required: true
+    end
+    def employee(id:)
+      Employee.find(id)
     end
 
     # field :lead, [LeadType], null: false,
@@ -79,6 +86,10 @@ module Types
     def user
       User.all
     end
+
+
+
+
 
     field :factInterventions, [FactInterventionType], null: false,
       description: "Listing all the FactInterventions"
