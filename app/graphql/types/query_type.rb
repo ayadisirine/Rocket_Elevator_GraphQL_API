@@ -9,7 +9,6 @@ module Types
     # Query connection
     field :buildings, [BuildingType], null: false,
       description: "Building queries"
-      # argument :id, ID, required: false
     def buildings
       Building.all
     end
@@ -18,7 +17,7 @@ module Types
       argument :id, ID, required: true
     end
     def building(id:)
-      Building.find(id)
+      building = Building.find(id)
     end
 
     field :address, [AddressType], null: false,
@@ -57,10 +56,17 @@ module Types
       Elevator.all
     end
 
-    field :employee, [EmployeeType], null: false,
+    field :employees, [EmployeeType], null: false,
       description: "Employee queries"
-    def employee
+    def employees
       Employee.all
+    end
+
+    field :employee, EmployeeType, null: false do
+      argument :id, ID, required: true
+    end
+    def employee(id:)
+      Employee.find(id)
     end
 
     # field :lead, [LeadType], null: false,
@@ -81,10 +87,21 @@ module Types
       User.all
     end
 
-    field :factIntervention, [FactInterventionType], null: false,
-      description: "FactIntervention queries"
-    def factIntervention
+
+
+
+
+    field :factInterventions, [FactInterventionType], null: false,
+      description: "Listing all the FactInterventions"
+    def factInterventions
       FactIntervention.all
+    end
+
+    field :factIntervention, FactInterventionType, null: false do
+      argument :id, ID, required: true
+    end
+    def factIntervention(id:)
+      fact = FactIntervention.find(id)
     end
 
     
