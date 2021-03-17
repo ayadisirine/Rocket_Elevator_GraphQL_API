@@ -11,5 +11,9 @@ module Types
     field :result, String, null: false
     field :report, String, null: true
     field :status, String, null: false
+    field :building, [BuildingType], null: true
+    field :battery, [BatteryType], null: true
+    field :column, [ColumnType], null: true
+    field :elevator, [ElevatorType], null: true
   end
 end
