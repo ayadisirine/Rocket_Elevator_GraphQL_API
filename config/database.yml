@@ -1,25 +1,4 @@
-development:
-  database: rocketelevators_development
-  adapter: mysql2
-  port: 3306
-  username: root
-  password: 
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  encoding: utf8
-  # socket: /var/run/mysqld/mysqld.sock
-
-dwh_development:
-  database: rocketelevators_dwh
-  adapter: postgresql
-  port: 5432
-  host: localhost
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  encoding: utf8
-  username: yoannsmacbookpro
-  password: postgres
-
-
-  default: &default
+production:
   database: rocketelevators_development
   adapter: mysql2
   port: 3306
@@ -40,6 +19,3 @@ dwh_production:
   username: codeboxx
   password: Codeboxx1!
 
-production:
-  <<: *default
-  database: as
