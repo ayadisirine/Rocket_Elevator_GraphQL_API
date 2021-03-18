@@ -1,4 +1,7 @@
-production:
+
+
+
+development:
   database: rocketelevators_development
   adapter: mysql2
   port: 3306
@@ -9,7 +12,7 @@ production:
   encoding: utf8
   socket: /var/run/mysqld/mysqld.sock
 
-dwh_production:
+dwh_development:
   database: rocketelevators_dwh_team_sirine
   adapter: postgresql
   port: 5432
