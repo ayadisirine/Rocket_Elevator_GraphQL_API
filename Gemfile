@@ -28,10 +28,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
-gem 'graphql'
-gem 'mysql2', '>= 0.4.4', '< 0.6.0'
-gem 'pg'
-gem 'multiverse'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -44,6 +41,10 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'graphiql-rails'
+  gem 'graphql'
+  gem 'mysql2', '>= 0.4.4', '< 0.6.0'
+  gem 'pg'
+  gem 'multiverse'
 end
 
 
