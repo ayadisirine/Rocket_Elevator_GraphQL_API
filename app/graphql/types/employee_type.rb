@@ -10,6 +10,8 @@ module Types
     field :factInterventions, [FactInterventionType], null: true
 
     field :interventionsCount, Integer, null: true
+
+    # Field Definitions
     def interventionsCount
       object.factInterventions.count
     end
