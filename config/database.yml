@@ -3,7 +3,7 @@ production:
   url: <%= ENV['MYSQL_URL'] %>
 
 dwh_production:
-  url: <%= ENV['POSTGRES_URL'] %>
+  url: <%= ENV[POSTGRES_URL] %>
 
 
 
