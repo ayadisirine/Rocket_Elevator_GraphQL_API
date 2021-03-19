@@ -19,6 +19,7 @@ module Types
     field :battery_count, Integer, null: true
     field :fact_count, Integer, null: true
 
+    # Field Definitions
     def fact_count
       object.factInterventions.count
     end

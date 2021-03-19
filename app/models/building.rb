@@ -1,4 +1,4 @@
-class Building < ApplicationRecord
+class Building < ApplicationRecord          #Defining relations
     belongs_to :customer, foreign_key: "customer_id"
     belongs_to :factIntervention
     has_many :batteries

@@ -16,6 +16,7 @@ module Types
     field :elevator, [ElevatorType], null: true
     field :building, BuildingType, null: true 
 
+# Field Definitions
     def building
       Building.find(object.building_id)
     end

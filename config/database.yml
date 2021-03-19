@@ -1,3 +1,4 @@
+#Environment Variables to Connect the DBs on Heroku
 
 production:
   url: <%= ENV['MYSQL_URL'] %>
