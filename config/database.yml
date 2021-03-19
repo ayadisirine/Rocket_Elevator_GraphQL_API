@@ -1,23 +1,18 @@
 
-
 production:
-  database: rocketelevators_development
-  adapter: mysql2
-  port: 3306
-  host: codeboxx.cq6zrczewpu2.us-east-1.rds.amazonaws.com
-  username: codeboxx
-  password: Codeboxx1!
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  encoding: utf8
-  socket: /var/run/mysqld/mysqld.sock
+  url: <%= ENV['MYSQL_URL'] %>
 
 dwh_production:
-  database: rocketelevators_dwh_team_sirine
-  adapter: postgresql
-  port: 5432
-  host: codeboxx-postgresql.cq6zrczewpu2.us-east-1.rds.amazonaws.com
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  encoding: utf8
-  username: codeboxx
-  password: Codeboxx1!
+  url: <%= ENV[POSTGRES_URL] %>
+
+
+
+
+
+
+
+
+
+
+
 
